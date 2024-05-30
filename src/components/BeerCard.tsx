@@ -19,7 +19,12 @@ const BeerCardComp = styled.div`
   color: white;
 `;
 
-const BeerLogo = styled.div<BeerData>`
+interface BeerLogoProps {
+  icon: string;
+  onClick: () => void;
+}
+
+const BeerLogo = styled.div<BeerLogoProps>`
   position: absolute;
   left: -20px;
   top: -20px;
