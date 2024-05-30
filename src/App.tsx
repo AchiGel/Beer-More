@@ -16,6 +16,10 @@ export interface BeerData {
 
 const LeftSection = styled.section`
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const LeftSectionImg = styled.img`
