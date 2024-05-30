@@ -12,11 +12,12 @@ const BeerCardComp = styled.div`
   background-size: cover;
   border-radius: 20px;
   position: relative;
-  padding: 20px 0px 0px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   color: white;
+  gap: 20px;
 `;
 
 interface BeerLogoProps {
@@ -41,12 +42,12 @@ const AlcoPercentage = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
-  max-width: 20px;
+  max-width: 40px;
 `;
 
 const BottomSection = styled.section`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 `;
 
