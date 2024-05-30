@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "icon": "/beerIcons/kazbegi.png",
+    "title": "Kazbegi",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 2,
+    "icon": "/beerIcons/kasris.png",
+    "title": "Kasris",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 3,
+    "icon": "/beerIcons/Krusovice-Symbol.png",
+    "title": "Krusovice",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 4,
+    "icon": "/beerIcons/staropramen-kegs_600.png",
+    "title": "Staropramen",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 5,
+    "icon": "/beerIcons/shavi-lomi.jpg",
+    "title": "IPA Shavi Lomi",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 6,
+    "icon": "/beerIcons/shavi-lomi.jpg",
+    "title": "HELLES Shavi Lomi",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 7,
+    "icon": "/beerIcons/taati.jpg",
+    "title": "Taati",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 8,
+    "icon": "/beerIcons/civ-civi.png",
+    "title": "Tsiv-tsivi",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 9,
+    "icon": "/beerIcons/sanapiro.png",
+    "title": "Sanapiro",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 10,
+    "icon": "/beerIcons/afeni.png",
+    "title": "Apheni",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 11,
+    "icon": "/beerIcons/afeni.png",
+    "title": "Apheni",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  },
+  {
+    "id": 12,
+    "icon": "/beerIcons/Bavaria-Logo.png",
+    "title": "Bavaria",
+    "flag": "/flags/Geo.png",
+    "alcohol": 4.5,
+    "filtered": true,
+    "price": 4.1
+  }
+]
