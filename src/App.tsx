@@ -20,6 +20,8 @@ const LeftSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: wheat;
+  gap: 30px;
 `;
 
 const LeftSectionImg = styled.img`
@@ -38,6 +40,7 @@ function App() {
   return (
     <div className="App">
       <LeftSection>
+        <h1 style={{ fontSize: "50px" }}>Beer & More</h1>
         <LeftSectionImg src={beer} />
       </LeftSection>
       <RightSection>

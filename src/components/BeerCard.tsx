@@ -92,7 +92,7 @@ export default function BeerCard(props: BeerData) {
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
           />
-          <h1 style={{ textAlign: "center" }}>{props.title}</h1>
+          <h1 style={{ textAlign: "right" }}>{props.title}</h1>
           <BottomSection>
             <AlcoPercentage>
               <img src={alco} style={{ width: "100%" }} />
