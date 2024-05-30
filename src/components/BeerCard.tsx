@@ -95,23 +95,39 @@ export default function BeerCard(props: BeerData) {
           <h1 style={{ textAlign: "right" }}>{props.title}</h1>
           <BottomSection>
             <AlcoPercentage>
-              <img src={alco} style={{ width: "100%" }} />
-              <span>{props.alcohol}%</span>
+              <img
+                src={alco}
+                style={{
+                  width: "100%",
+                  filter:
+                    "brightness(0) saturate(100%) invert(100%) sepia(48%) saturate(1890%) hue-rotate(12deg) brightness(106%) contrast(92%)",
+                }}
+              />
+              <span style={{ color: "yellow", fontWeight: "bold" }}>
+                {props.alcohol}%
+              </span>
             </AlcoPercentage>
             {props.filtered ? null : (
-              <img src={filter} style={{ width: "40px" }} />
+              <img
+                src={filter}
+                style={{
+                  width: "40px",
+                  filter:
+                    "brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(3902%) hue-rotate(338deg) brightness(94%) contrast(86%)",
+                }}
+              />
             )}
             <PriceBox>
               <img
                 src={props.flag}
                 style={{
-                  width: "50px",
+                  width: "40px",
                   position: "absolute",
-                  left: "-55px",
-                  top: "0",
+                  left: "-42px",
+                  top: "-10px",
                 }}
               />
-              <h2 style={{ color: "yellow", fontSize: "50px" }}>
+              <h2 style={{ color: "yellow", fontSize: "25px" }}>
                 {props.price} ₾
               </h2>
             </PriceBox>
