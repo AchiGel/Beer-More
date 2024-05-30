@@ -95,7 +95,7 @@
     "title": "Apheni",
     "flag": "/flags/Geo.png",
     "alcohol": 4.5,
-    "filtered": true,
+    "filtered": false,
     "price": 4.1
   },
   {

@@ -1,14 +1,20 @@
 import { BeerData } from "../App";
 import styled from "styled-components";
 import alco from "../assets/blood-test.png";
+import cardBackground from "../assets/wall-texture-grey-backgrounds.jpg";
+import filter from "../assets/unfiltered.png";
 
 const BeerCardComp = styled.div`
-  background-color: grey;
+  background-image: url(${cardBackground});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
   position: relative;
   padding: 20px 0px 0px 20px;
   display: flex;
   flex-direction: column;
+  color: white;
 `;
 
 const BeerLogo = styled.div<BeerData>`
@@ -57,13 +63,13 @@ export default function BeerCard(props: BeerData) {
           <img src={alco} style={{ width: "100%" }} />
           <span>{props.alcohol}%</span>
         </AlcoPercentage>
-        {props.filtered ? null : "X"}
+        {props.filtered ? null : <img src={filter} style={{ width: "40px" }} />}
         <PriceBox>
           <img
             src={props.flag}
             style={{ width: "50px", position: "absolute", left: "-55px" }}
           />
-          <h2>{props.price} ₾</h2>
+          <h2 style={{ color: "yellow" }}>{props.price} ₾</h2>
         </PriceBox>
       </BottomSection>
     </BeerCardComp>

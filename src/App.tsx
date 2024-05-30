@@ -26,7 +26,7 @@ const RightSection = styled.section`
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
   padding: 30px;
 `;
 
