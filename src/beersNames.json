@@ -6,7 +6,7 @@
     "flag": "/flags/Geo.png",
     "alcohol": 4.5,
     "filtered": true,
-    "price": 4.1
+    "price": 4.7
   },
   {
     "id": 2,
@@ -15,61 +15,61 @@
     "flag": "/flags/Geo.png",
     "alcohol": 4.5,
     "filtered": true,
-    "price": 4.1
+    "price": 3.85
   },
   {
     "id": 3,
     "icon": "/beerIcons/Krusovice-Symbol.png",
     "title": "Krusovice",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 5,
     "filtered": true,
-    "price": 4.1
+    "price": 8.1
   },
   {
     "id": 4,
     "icon": "/beerIcons/staropramen-kegs_600.png",
     "title": "Staropramen",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 5,
     "filtered": true,
-    "price": 4.1
+    "price": 7.0
   },
   {
     "id": 5,
     "icon": "/beerIcons/shavi-lomi.jpg",
     "title": "IPA Shavi Lomi",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 5,
     "filtered": true,
-    "price": 4.1
+    "price": 8.4
   },
   {
     "id": 6,
     "icon": "/beerIcons/shavi-lomi.jpg",
     "title": "HELLES Shavi Lomi",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 5,
     "filtered": true,
-    "price": 4.1
+    "price": 6.5
   },
   {
     "id": 7,
     "icon": "/beerIcons/taati.jpg",
     "title": "Taati",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
-    "filtered": true,
-    "price": 4.1
+    "alcohol": 6,
+    "filtered": false,
+    "price": 8.2
   },
   {
     "id": 8,
     "icon": "/beerIcons/civ-civi.png",
     "title": "Tsiv-tsivi",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 5.0,
     "filtered": true,
-    "price": 4.1
+    "price": 4.8
   },
   {
     "id": 9,
@@ -78,33 +78,33 @@
     "flag": "/flags/Geo.png",
     "alcohol": 4.5,
     "filtered": true,
-    "price": 4.1
+    "price": 4.4
   },
   {
     "id": 10,
     "icon": "/beerIcons/afeni.png",
     "title": "Apheni",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 4.4,
     "filtered": true,
-    "price": 4.1
+    "price": 4.9
   },
   {
     "id": 11,
     "icon": "/beerIcons/afeni.png",
     "title": "Apheni",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 4.4,
     "filtered": false,
-    "price": 4.1
+    "price": 4.9
   },
   {
     "id": 12,
-    "icon": "/beerIcons/Bavaria-Logo.png",
-    "title": "Bavaria",
+    "icon": "/beerIcons/leffe.jpg",
+    "title": "Leffe",
     "flag": "/flags/Geo.png",
-    "alcohol": 4.5,
+    "alcohol": 7.5,
     "filtered": true,
-    "price": 4.1
+    "price": 14.0
   }
 ]
