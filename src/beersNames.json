@@ -102,7 +102,7 @@
     "id": 12,
     "icon": "/beerIcons/leffe.jpg",
     "title": "Leffe",
-    "flag": "/flags/Geo.png",
+    "flag": "/flags/belgium.png",
     "alcohol": 7.5,
     "filtered": true,
     "price": 14.0
