@@ -2,7 +2,8 @@ import "./App.css";
 import BeerCard from "./components/BeerCard";
 import beerData from "./beersNames.json";
 import styled from "styled-components";
-import beer from "./assets/Beer.svg.png";
+import beer from "./assets/Beer.svg";
+import logo from "./assets/logo.png";
 
 export interface BeerData {
   id: number;
@@ -22,10 +23,15 @@ const LeftSection = styled.section`
   align-items: center;
   color: wheat;
   gap: 30px;
+  padding: 15px;
+`;
+
+const LeftSectionLogo = styled.img`
+  width: 100%;
 `;
 
 const LeftSectionImg = styled.img`
-  width: 50%;
+  width: 80%;
 `;
 
 const RightSection = styled.section`
@@ -40,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <LeftSection>
-        <h1 style={{ fontSize: "50px" }}>Beer & More</h1>
+        <LeftSectionLogo src={logo} />
         <LeftSectionImg src={beer} />
       </LeftSection>
       <RightSection>
