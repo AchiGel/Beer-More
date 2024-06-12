@@ -15,9 +15,10 @@ const BeerCardComp = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   color: white;
   gap: 20px;
+  height: 23vh;
 `;
 
 interface BeerLogoProps {
@@ -27,11 +28,11 @@ interface BeerLogoProps {
 
 const BeerLogo = styled.div<BeerLogoProps>`
   position: absolute;
-  left: -20px;
-  top: -20px;
+  left: 0;
+  top: 0;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 5vw;
+  height: 5vw;
   background-image: url(${(props) => props.icon});
   background-size: cover;
   background-position: center;
@@ -58,7 +59,7 @@ const PriceBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 1vw;
 `;
 
 const OutOfStock = styled.div`
@@ -84,7 +85,7 @@ export default function BeerCard(props: BeerData) {
             onClick={() => setIsClicked(!isClicked)}
           />
           <h1 style={{ textAlign: "center" }}>{props.title}</h1>
-          <OutOfStock>Out Of Stock</OutOfStock>
+          <OutOfStock>მარაგი ამოწურულია</OutOfStock>
         </BeerCardComp>
       ) : (
         <BeerCardComp>
@@ -92,18 +93,29 @@ export default function BeerCard(props: BeerData) {
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
           />
-          <h1 style={{ textAlign: "right" }}>{props.title}</h1>
+          <h1 style={{ textAlign: "right", fontSize: "2.5vw" }}>
+            {props.title}
+          </h1>
+          <h2 style={{ textAlign: "right", fontSize: "1.5vw" }}>
+            {props.subtitle}
+          </h2>
           <BottomSection>
             <AlcoPercentage>
               <img
                 src={alco}
                 style={{
-                  width: "100%",
+                  width: "2vw",
                   filter:
                     "brightness(0) saturate(100%) invert(100%) sepia(48%) saturate(1890%) hue-rotate(12deg) brightness(106%) contrast(92%)",
                 }}
               />
-              <span style={{ color: "yellow", fontWeight: "bold" }}>
+              <span
+                style={{
+                  color: "yellow",
+                  fontWeight: "bold",
+                  fontSize: "1.5vw",
+                }}
+              >
                 {props.alcohol}%
               </span>
             </AlcoPercentage>
@@ -111,7 +123,7 @@ export default function BeerCard(props: BeerData) {
               <img
                 src={filter}
                 style={{
-                  width: "40px",
+                  width: "2vw",
                   filter:
                     "brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(3902%) hue-rotate(338deg) brightness(94%) contrast(86%)",
                 }}
@@ -121,13 +133,13 @@ export default function BeerCard(props: BeerData) {
               <img
                 src={props.flag}
                 style={{
-                  width: "40px",
+                  width: "2vw",
                   position: "absolute",
-                  left: "-42px",
+                  left: "-2.5vw",
                   top: "-10px",
                 }}
               />
-              <h2 style={{ color: "yellow", fontSize: "25px" }}>
+              <h2 style={{ color: "yellow", fontSize: "2vw" }}>
                 {props.price} ₾
               </h2>
             </PriceBox>

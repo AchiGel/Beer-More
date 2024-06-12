@@ -2,13 +2,13 @@ import "./App.css";
 import BeerCard from "./components/BeerCard";
 import beerData from "./beersNames.json";
 import styled from "styled-components";
-import beer from "./assets/Beer.svg";
 import logo from "./assets/logo.png";
 
 export interface BeerData {
   id: number;
   icon: string;
   title: string;
+  subtitle: string | null;
   flag: string;
   alcohol: number;
   filtered: boolean;
@@ -28,16 +28,13 @@ const LeftSection = styled.section`
 
 const LeftSectionLogo = styled.img`
   width: 100%;
-`;
-
-const LeftSectionImg = styled.img`
-  width: 80%;
+  margin: 8em;
 `;
 
 const RightSection = styled.section`
-  width: 70%;
+  width: 85%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 25%);
   gap: 25px;
   padding: 30px;
 `;
@@ -47,13 +44,13 @@ function App() {
     <div className="App">
       <LeftSection>
         <LeftSectionLogo src={logo} />
-        <LeftSectionImg src={beer} />
       </LeftSection>
       <RightSection>
         {beerData.map((item) => (
           <BeerCard
             key={item.id}
             title={item.title}
+            subtitle={item.subtitle}
             id={item.id}
             icon={item.icon}
             flag={item.flag}
