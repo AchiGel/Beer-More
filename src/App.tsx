@@ -3,6 +3,7 @@ import BeerCard from "./components/BeerCard";
 import beerData from "./beersNames.json";
 import styled from "styled-components";
 import logo from "./assets/logo.png";
+import { useEffect, useState } from "react";
 
 export interface BeerData {
   id: number;
@@ -40,8 +41,26 @@ const RightSection = styled.section`
 `;
 
 function App() {
+  const [fullScreen, setFullScreen] = useState(false);
+
+  useEffect(() => {
+    function fullScreenMode() {
+      document.querySelector("body")?.requestFullscreen();
+    }
+
+    fullScreenMode();
+  }, [fullScreen]);
+
   return (
     <div className="App">
+      <button
+        style={{ position: "absolute", right: "0", top: "0" }}
+        onClick={() => {
+          setFullScreen(!fullScreen);
+        }}
+      >
+        Full
+      </button>
       <LeftSection>
         <LeftSectionLogo src={logo} />
       </LeftSection>
