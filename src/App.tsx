@@ -32,10 +32,10 @@ const LeftSectionLogo = styled.img`
 `;
 
 const RightSection = styled.section`
-  width: 85%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  gap: 25px;
+  gap: 25px 25px 25px 0;
   padding: 30px;
 `;
 
