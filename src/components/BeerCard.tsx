@@ -58,7 +58,7 @@ const PriceBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
+  padding: 0.5vw;
 `;
 
 const OutOfStock = styled.div`
