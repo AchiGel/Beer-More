@@ -17,7 +17,7 @@ const BeerCardComp = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  height: 23vh;
+  height: 25vh;
 `;
 
 interface BeerLogoProps {
