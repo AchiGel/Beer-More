@@ -93,10 +93,10 @@ export default function BeerCard(props: BeerData) {
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
           />
-          <h1 style={{ textAlign: "right", fontSize: "2.5vw" }}>
+          <h1 style={{ textAlign: "right", fontSize: "2vw" }}>
             {props.title}
           </h1>
-          <h2 style={{ textAlign: "right", fontSize: "1.5vw" }}>
+          <h2 style={{ textAlign: "right", fontSize: "1.75vw" }}>
             {props.subtitle}
           </h2>
           <BottomSection>
@@ -139,7 +139,7 @@ export default function BeerCard(props: BeerData) {
                   top: "-10px",
                 }}
               />
-              <h2 style={{ color: "yellow", fontSize: "2vw" }}>
+              <h2 style={{ color: "yellow", fontSize: "3vw" }}>
                 {props.price} ₾
               </h2>
             </PriceBox>
