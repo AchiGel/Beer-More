@@ -35,8 +35,8 @@ const RightSection = styled.section`
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  gap: 25px 25px 25px 0;
-  padding: 30px;
+  gap: 25px;
+  padding: 25px 25px 25px 0;
 `;
 
 function App() {
