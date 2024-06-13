@@ -29,7 +29,6 @@ const LeftSection = styled.section`
 
 const LeftSectionLogo = styled.img`
   width: 100%;
-  margin: 4em;
 `;
 
 const RightSection = styled.section`
