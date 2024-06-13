@@ -138,7 +138,7 @@ export default function BeerCard(props: BeerData) {
                   top: "-10px",
                 }}
               />
-              <h2 style={{ color: "#ffc107", fontSize: "3vw" }}>
+              <h2 style={{ color: "#ffc107", fontSize: "3.5vw" }}>
                 {props.price} ₾
               </h2>
             </PriceBox>
