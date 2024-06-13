@@ -110,7 +110,7 @@ export default function BeerCard(props: BeerData) {
               />
               <span
                 style={{
-                  color: "yellow",
+                  color: "#ffc107",
                   fontWeight: "bold",
                   fontSize: "1.5vw",
                 }}
