@@ -15,9 +15,8 @@ const BeerCardComp = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   color: white;
-  gap: 20px;
   height: 23vh;
 `;
 
