@@ -27,11 +27,11 @@ interface BeerLogoProps {
 
 const BeerLogo = styled.div<BeerLogoProps>`
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -15px;
+  top: -15px;
   border-radius: 50%;
-  width: 5vw;
-  height: 5vw;
+  width: 8vw;
+  height: 8vw;
   background-image: url(${(props) => props.icon});
   background-size: cover;
   background-position: center;
