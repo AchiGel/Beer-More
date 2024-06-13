@@ -27,8 +27,8 @@ interface BeerLogoProps {
 
 const BeerLogo = styled.div<BeerLogoProps>`
   position: absolute;
-  left: -15px;
-  top: -15px;
+  left: -25px;
+  top: -25px;
   border-radius: 50%;
   width: 8vw;
   height: 8vw;
