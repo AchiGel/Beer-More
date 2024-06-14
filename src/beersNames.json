@@ -118,5 +118,45 @@
     "alcohol": 7.5,
     "filtered": true,
     "price": 14.0
+  },
+  {
+    "id": 13,
+    "icon": "",
+    "title": "Bavaria",
+    "subtitle": "ბავარია",
+    "flag": "/flags/Geo.png",
+    "alcohol": 5,
+    "filtered": true,
+    "price": 0
+  },
+  {
+    "id": 14,
+    "icon": "",
+    "title": "Bavaria",
+    "subtitle": "ბავარია",
+    "flag": "/flags/Geo.png",
+    "alcohol": 5,
+    "filtered": true,
+    "price": 0
+  },
+  {
+    "id": 15,
+    "icon": "",
+    "title": "Bavaria",
+    "subtitle": "ბავარია",
+    "flag": "/flags/Geo.png",
+    "alcohol": 5,
+    "filtered": true,
+    "price": 0
+  },
+  {
+    "id": 16,
+    "icon": "",
+    "title": "Bavaria",
+    "subtitle": "ბავარია",
+    "flag": "/flags/Geo.png",
+    "alcohol": 5,
+    "filtered": true,
+    "price": 0
   }
 ]
