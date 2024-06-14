@@ -1,9 +1,8 @@
 import "./App.css";
-import BeerCard from "./components/BeerCard";
-import beerData from "./beersNames.json";
 import styled from "styled-components";
 import logo from "./assets/logo.png";
 import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 
 export interface BeerData {
   id: number;
@@ -31,14 +30,6 @@ const LeftSectionLogo = styled.img`
   width: 110%;
 `;
 
-const RightSection = styled.section`
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  gap: 25px;
-  padding: 25px 25px 25px 0;
-`;
-
 function App() {
   const [fullScreen, setFullScreen] = useState(false);
 
@@ -63,21 +54,7 @@ function App() {
       <LeftSection>
         <LeftSectionLogo src={logo} />
       </LeftSection>
-      <RightSection>
-        {beerData.map((item) => (
-          <BeerCard
-            key={item.id}
-            title={item.title}
-            subtitle={item.subtitle}
-            id={item.id}
-            icon={item.icon}
-            flag={item.flag}
-            alcohol={item.alcohol}
-            filtered={item.filtered}
-            price={item.price}
-          />
-        ))}
-      </RightSection>
+      <Outlet />
     </div>
   );
 }
