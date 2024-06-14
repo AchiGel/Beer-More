@@ -17,7 +17,7 @@ const BeerCardComp = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  height: 25vh;
+  height: 30vh;
 `;
 
 interface BeerLogoProps {
@@ -92,9 +92,7 @@ export default function BeerCard(props: BeerData) {
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
           />
-          <h1 style={{ textAlign: "right", fontSize: "2vw" }}>
-            {props.title}
-          </h1>
+          <h1 style={{ textAlign: "right", fontSize: "2vw" }}>{props.title}</h1>
           <h2 style={{ textAlign: "right", fontSize: "1.75vw" }}>
             {props.subtitle}
           </h2>

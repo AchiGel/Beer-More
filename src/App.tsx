@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "./assets/logo.png";
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export interface BeerData {
   id: number;
@@ -27,7 +28,8 @@ const LeftSection = styled.section`
 `;
 
 const LeftSectionLogo = styled.img`
-  width: 110%;
+  margin-top: 50px;
+  width: 50vw;
 `;
 
 function App() {
@@ -55,6 +57,14 @@ function App() {
         <LeftSectionLogo src={logo} />
       </LeftSection>
       <Outlet />
+      <div>
+        <button>
+          <Link to="1">first</Link>
+        </button>
+        <button>
+          <Link to="2">second</Link>
+        </button>
+      </div>
     </div>
   );
 }

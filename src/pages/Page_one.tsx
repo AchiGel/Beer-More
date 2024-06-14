@@ -2,7 +2,7 @@ import styled from "styled-components";
 import beerData from "../beersNames.json";
 import BeerCard from "../components/BeerCard";
 
-const RightSection = styled.section`
+export const RightSection = styled.section`
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 25%);

@@ -1,14 +1,6 @@
-import styled from "styled-components";
 import beerData from "../beersNames.json";
 import BeerCard from "../components/BeerCard";
-
-const RightSection = styled.section`
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  gap: 25px;
-  padding: 25px 25px 25px 0;
-`;
+import { RightSection } from "./Page_one";
 
 export default function Page_two() {
   return (
