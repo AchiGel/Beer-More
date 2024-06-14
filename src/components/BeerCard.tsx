@@ -27,8 +27,8 @@ interface BeerLogoProps {
 
 const BeerLogo = styled.div<BeerLogoProps>`
   position: absolute;
-  left: -25px;
-  top: -25px;
+  left: -35px;
+  top: -35px;
   border-radius: 50%;
   width: 8vw;
   height: 8vw;
@@ -42,7 +42,6 @@ const AlcoPercentage = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
-  max-width: 40px;
 `;
 
 const BottomSection = styled.section`
@@ -67,7 +66,7 @@ const OutOfStock = styled.div`
   align-items: center;
   justify-content: center;
   color: red;
-  font-size: 30px;
+  font-size: 3vw;
 `;
 
 export default function BeerCard(props: BeerData) {
@@ -77,13 +76,19 @@ export default function BeerCard(props: BeerData) {
     <>
       {isClicked ? (
         <BeerCardComp
-          style={{ backgroundImage: "url()", backgroundColor: "grey" }}
+          style={{
+            backgroundImage: "url()",
+            backgroundColor: "grey",
+            alignItems: "flex-end",
+          }}
         >
           <BeerLogo
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
           />
-          <h1 style={{ textAlign: "center" }}>{props.title}</h1>
+          <h1 style={{ textAlign: "center", fontSize: "2.5vw" }}>
+            {props.title}
+          </h1>
           <OutOfStock>მარაგი ამოწურულია</OutOfStock>
         </BeerCardComp>
       ) : (
@@ -92,7 +97,9 @@ export default function BeerCard(props: BeerData) {
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
           />
-          <h1 style={{ textAlign: "right", fontSize: "2vw" }}>{props.title}</h1>
+          <h1 style={{ textAlign: "right", fontSize: "2.5vw" }}>
+            {props.title}
+          </h1>
           <h2 style={{ textAlign: "right", fontSize: "1.75vw" }}>
             {props.subtitle}
           </h2>
@@ -110,7 +117,7 @@ export default function BeerCard(props: BeerData) {
                 style={{
                   color: "#ffc107",
                   fontWeight: "bold",
-                  fontSize: "1.5vw",
+                  fontSize: "2vw",
                 }}
               >
                 {props.alcohol}%
@@ -130,13 +137,13 @@ export default function BeerCard(props: BeerData) {
               <img
                 src={props.flag}
                 style={{
-                  width: "2vw",
+                  width: "3vw",
                   position: "absolute",
-                  left: "-2.5vw",
+                  left: "-3vw",
                   top: "-10px",
                 }}
               />
-              <h2 style={{ color: "#ffc107", fontSize: "3.5vw" }}>
+              <h2 style={{ color: "#ffc107", fontSize: "4vw" }}>
                 {props.price} ₾
               </h2>
             </PriceBox>

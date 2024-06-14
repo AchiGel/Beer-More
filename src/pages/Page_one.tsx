@@ -3,7 +3,7 @@ import beerData from "../beersNames.json";
 import BeerCard from "../components/BeerCard";
 
 export const RightSection = styled.section`
-  width: 90%;
+  width: 95%;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   gap: 25px;
