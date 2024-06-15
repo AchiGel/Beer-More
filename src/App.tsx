@@ -14,7 +14,7 @@ export interface BeerData {
   alcohol: number;
   filtered: boolean;
   price: number;
-  discount: number | null;
+  discount: number | undefined;
 }
 
 const LeftSection = styled.section`

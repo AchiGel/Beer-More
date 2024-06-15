@@ -50,7 +50,7 @@ const BottomSection = styled.section`
   justify-content: space-between;
 `;
 
-const PriceBox = styled.div<{ discount: number | null }>`
+const PriceBox = styled.div<{ discount: number | undefined }>`
   border-radius: 15px;
   border: 2px solid white;
   position: relative;
