@@ -151,20 +151,20 @@ export default function BeerCard(props: BeerData) {
                     : undefined
                 }
               >
-                {props.discount} ₾
+                {props.discount === 0 ? null : props.discount + "₾"}
               </h3>
               <h2
                 style={
-                  props.discount
+                  props.discount === 0
                     ? {
+                        color: "#ffc107",
+                        fontSize: "4vw",
+                      }
+                    : {
                         color: "#ff000094",
                         fontSize: "4vw",
                         textDecoration: "line-through",
                         lineHeight: "4vw",
-                      }
-                    : {
-                        color: "#ffc107",
-                        fontSize: "4vw",
                       }
                 }
               >
