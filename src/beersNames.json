@@ -19,7 +19,7 @@
     "alcohol": 4.5,
     "filtered": true,
     "price": 4.2,
-    "discount": 3.85
+    "discount": 3.65
   },
   {
     "id": 3,
@@ -107,7 +107,7 @@
     "alcohol": 4.4,
     "filtered": true,
     "price": 4.9,
-    "discount": 0
+    "discount": 4.5
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "alcohol": 4.4,
     "filtered": false,
     "price": 4.9,
-    "discount": 0
+    "discount": 4.5
   },
   {
     "id": 12,
