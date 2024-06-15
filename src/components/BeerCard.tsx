@@ -166,7 +166,7 @@ export default function BeerCard(props: BeerData) {
                     : {
                         color: "white",
                         fontSize: "4vw",
-                        textDecoration: "line-through",
+                        textDecoration: "line-through #ffc107",
                         lineHeight: "4vw",
                       }
                 }
