@@ -149,7 +149,7 @@ export default function BeerCard(props: BeerData) {
               <h3
                 style={
                   props.discount
-                    ? { color: "#045300", fontSize: "4vw", lineHeight: "4vw" }
+                    ? { color: "#ffc107", fontSize: "4vw", lineHeight: "4vw" }
                     : undefined
                 }
               >
@@ -159,7 +159,7 @@ export default function BeerCard(props: BeerData) {
                 style={
                   props.discount === 0
                     ? {
-                        color: "#ffc107",
+                        color: "white",
                         fontSize: "4vw",
                         lineHeight: "4vw",
                       }
