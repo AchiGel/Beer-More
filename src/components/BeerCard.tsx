@@ -35,6 +35,8 @@ const BeerLogo = styled.div<BeerLogoProps>`
   background-image: url(${(props) => props.icon});
   background-size: cover;
   background-position: center;
+  background-color: ${(props) =>
+    props.icon === "/beerIcons/zedazeni.png" ? "White" : "none"};
   cursor: pointer;
 `;
 
@@ -147,7 +149,7 @@ export default function BeerCard(props: BeerData) {
               <h3
                 style={
                   props.discount
-                    ? { color: "#045300", fontSize: "4vw" }
+                    ? { color: "#045300", fontSize: "4vw", lineHeight: "4vw" }
                     : undefined
                 }
               >
@@ -159,6 +161,7 @@ export default function BeerCard(props: BeerData) {
                     ? {
                         color: "#ffc107",
                         fontSize: "4vw",
+                        lineHeight: "4vw",
                       }
                     : {
                         color: "#ff000094",
