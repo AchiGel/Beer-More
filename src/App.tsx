@@ -37,11 +37,11 @@ function App() {
   const [fullScreen, setFullScreen] = useState(false);
 
   useEffect(() => {
-    function fullScreenMode() {
-      document.querySelector("body")?.requestFullscreen();
+    if (fullScreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.fullscreenElement) {
+      document.exitFullscreen();
     }
-
-    fullScreenMode();
   }, [fullScreen]);
 
   return (
