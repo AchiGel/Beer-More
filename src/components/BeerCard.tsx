@@ -159,12 +159,12 @@ export default function BeerCard(props: BeerData) {
                 style={
                   props.discount === 0
                     ? {
-                        color: "white",
+                        color: "#ff000094",
                         fontSize: "4vw",
                         lineHeight: "4vw",
                       }
                     : {
-                        color: "#ff000094",
+                        color: "white",
                         fontSize: "4vw",
                         textDecoration: "line-through",
                         lineHeight: "4vw",
