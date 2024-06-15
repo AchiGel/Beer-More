@@ -84,8 +84,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5.0,
     "filtered": true,
-    "price": 4.7,
-    "discount": 0
+    "price": 4.8,
+    "discount": 4.5
   },
   {
     "id": 9,
