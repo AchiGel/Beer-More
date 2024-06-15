@@ -18,6 +18,7 @@ export default function Page_two() {
             alcohol={item.alcohol}
             filtered={item.filtered}
             price={item.price}
+            discount={item.discount}
           />
         ))}
     </RightSection>

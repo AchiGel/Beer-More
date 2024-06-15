@@ -50,7 +50,7 @@ const BottomSection = styled.section`
   justify-content: space-between;
 `;
 
-const PriceBox = styled.div`
+const PriceBox = styled.div<{ discount: number | null }>`
   border-radius: 15px;
   border: 2px solid white;
   position: relative;
@@ -58,6 +58,7 @@ const PriceBox = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0.5vw;
+  flex-direction: ${(props) => (props.discount ? "column-reverse" : "none")};
 `;
 
 const OutOfStock = styled.div`
@@ -133,7 +134,7 @@ export default function BeerCard(props: BeerData) {
                 }}
               />
             )}
-            <PriceBox>
+            <PriceBox discount={props.discount}>
               <img
                 src={props.flag}
                 style={{
@@ -143,7 +144,26 @@ export default function BeerCard(props: BeerData) {
                   top: "-10px",
                 }}
               />
-              <h2 style={{ color: "#ffc107", fontSize: "4vw" }}>
+              <h3
+                style={props.discount && { color: "#045300", fontSize: "4vw" }}
+              >
+                {props.discount} ₾
+              </h3>
+              <h2
+                style={
+                  props.discount
+                    ? {
+                        color: "#ff000094",
+                        fontSize: "4vw",
+                        textDecoration: "line-through",
+                        lineHeight: "4vw",
+                      }
+                    : {
+                        color: "#ffc107",
+                        fontSize: "4vw",
+                      }
+                }
+              >
                 {props.price} ₾
               </h2>
             </PriceBox>

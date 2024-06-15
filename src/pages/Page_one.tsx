@@ -26,6 +26,7 @@ export default function Page_one() {
             alcohol={item.alcohol}
             filtered={item.filtered}
             price={item.price}
+            discount={item.discount}
           />
         ))}
     </RightSection>
