@@ -19,7 +19,7 @@
     "alcohol": 4.5,
     "filtered": true,
     "price": 4.2,
-    "discount": 3.65
+    "discount": 3.7
   },
   {
     "id": 3,
@@ -150,7 +150,7 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5,
     "filtered": true,
-    "price": 13.85,
+    "price": 13.8,
     "discount": 13.4
   },
   {
