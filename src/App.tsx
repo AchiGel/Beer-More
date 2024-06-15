@@ -31,6 +31,7 @@ const LeftSection = styled.section`
 const LeftSectionLogo = styled.img`
   margin-top: 50px;
   width: 50vw;
+  filter: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(3678%) hue-rotate(350deg) brightness(104%) contrast(107%);
 `;
 
 function App() {
