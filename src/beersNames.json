@@ -7,7 +7,7 @@
     "flag": "/flags/Geo.png",
     "alcohol": 4.5,
     "filtered": true,
-    "price": 4.6,
+    "price": 4.7,
     "discount": 0
   },
   {
@@ -19,7 +19,7 @@
     "alcohol": 4.5,
     "filtered": true,
     "price": 4.2,
-    "discount": 3.7
+    "discount": "4+1"
   },
   {
     "id": 3,
@@ -29,8 +29,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5,
     "filtered": true,
-    "price": 8.2,
-    "discount": 7.8
+    "price": 8.4,
+    "discount": 0
   },
   {
     "id": 4,
@@ -40,8 +40,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5,
     "filtered": true,
-    "price": 7.2,
-    "discount": 6.7
+    "price": 7,
+    "discount": 0
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5,
     "filtered": true,
-    "price": 8.4,
+    "price": 8.5,
     "discount": 0
   },
   {
@@ -74,7 +74,7 @@
     "alcohol": 6,
     "filtered": false,
     "price": 8.2,
-    "discount": 7.8
+    "discount": 0
   },
   {
     "id": 8,
@@ -84,8 +84,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5.0,
     "filtered": true,
-    "price": 4.8,
-    "discount": 4.5
+    "price": 4.6,
+    "discount": 0
   },
   {
     "id": 9,
@@ -106,8 +106,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 4.4,
     "filtered": true,
-    "price": 4.9,
-    "discount": 4.4
+    "price": 4.7,
+    "discount": 0
   },
   {
     "id": 11,
@@ -117,8 +117,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 4.4,
     "filtered": false,
-    "price": 4.9,
-    "discount": 4.4
+    "price": 4.7,
+    "discount": 0
   },
   {
     "id": 12,
@@ -140,7 +140,7 @@
     "alcohol": 5,
     "filtered": true,
     "price": 7.8,
-    "discount": 7.3
+    "discount": 0
   },
   {
     "id": 14,
@@ -150,8 +150,8 @@
     "flag": "/flags/Geo.png",
     "alcohol": 5,
     "filtered": true,
-    "price": 13.8,
-    "discount": 13.4
+    "price": 14,
+    "discount": 0
   },
   {
     "id": 15,

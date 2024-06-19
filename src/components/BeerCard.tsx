@@ -4,6 +4,7 @@ import alco from "../assets/blood-test.png";
 import cardBackground from "../assets/wall-texture-grey-backgrounds.jpg";
 import filter from "../assets/unfiltered.png";
 import { useState } from "react";
+import Promo from "./Promo";
 
 const BeerCardComp = styled.div`
   background-image: url(${cardBackground});
@@ -52,7 +53,7 @@ const BottomSection = styled.section`
   justify-content: space-between;
 `;
 
-const PriceBox = styled.div<{ discount: number | undefined }>`
+const PriceBox = styled.div<{ discount: string | undefined }>`
   border-radius: 15px;
   border: 2px solid white;
   position: relative;
@@ -96,6 +97,7 @@ export default function BeerCard(props: BeerData) {
         </BeerCardComp>
       ) : (
         <BeerCardComp>
+          {props.discount && <Promo promo={props.discount} />}
           <BeerLogo
             icon={props.icon}
             onClick={() => setIsClicked(!isClicked)}
@@ -146,7 +148,7 @@ export default function BeerCard(props: BeerData) {
                   top: "-10px",
                 }}
               />
-              <h3
+              {/* <h3
                 style={
                   props.discount
                     ? { color: "#ffc107", fontSize: "4vw", lineHeight: "4vw" }
@@ -154,22 +156,13 @@ export default function BeerCard(props: BeerData) {
                 }
               >
                 {props.discount === 0 ? null : props.discount + "₾"}
-              </h3>
+              </h3> */}
               <h2
-                style={
-                  props.discount === 0
-                    ? {
-                        color: "#ffc107",
-                        fontSize: "4vw",
-                        lineHeight: "4vw",
-                      }
-                    : {
-                        color: "white",
-                        fontSize: "3vw",
-                        textDecoration: "line-through 0.2vw #ffc107",
-                        lineHeight: "4vw",
-                      }
-                }
+                style={{
+                  color: "#ffc107",
+                  fontSize: "4vw",
+                  lineHeight: "4vw",
+                }}
               >
                 {props.price} ₾
               </h2>
