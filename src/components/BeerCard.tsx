@@ -53,7 +53,7 @@ const BottomSection = styled.section`
   justify-content: space-between;
 `;
 
-const PriceBox = styled.div<{ discount: string | undefined }>`
+const PriceBox = styled.div<{ discount: string | number }>`
   border-radius: 15px;
   border: 2px solid white;
   position: relative;

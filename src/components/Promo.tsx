@@ -16,6 +16,6 @@ const PromoDiv = styled.div`
   color: #ffc107;
 `;
 
-export default function Promo({ promo }: { promo: string | undefined }) {
+export default function Promo({ promo }: { promo: string | number }) {
   return <PromoDiv>{promo}</PromoDiv>;
 }
