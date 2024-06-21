@@ -107,7 +107,7 @@
     "alcohol": 4.4,
     "filtered": true,
     "price": 4.7,
-    "discount": 0
+    "discount": "4+1"
   },
   {
     "id": 11,
@@ -155,13 +155,13 @@
   },
   {
     "id": 15,
-    "icon": "/beerIcons/zedazeni.png",
-    "title": "ზედაზენი",
-    "subtitle": null,
+    "icon": "/beerIcons/goodman.jpeg",
+    "title": "Goodman",
+    "subtitle": "გუდმენი",
     "flag": "/flags/Geo.png",
     "alcohol": 5,
     "filtered": true,
-    "price": 0,
+    "price": 4.6,
     "discount": 0
   },
   {
