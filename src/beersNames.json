@@ -41,7 +41,7 @@
     "alcohol": 5,
     "filtered": true,
     "price": 7,
-    "discount": 0
+    "discount": "5+1"
   },
   {
     "id": 5,
@@ -107,7 +107,7 @@
     "alcohol": 4.4,
     "filtered": true,
     "price": 4.7,
-    "discount": "4+1"
+    "discount": 0
   },
   {
     "id": 11,
