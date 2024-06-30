@@ -41,7 +41,7 @@
     "alcohol": 5,
     "filtered": true,
     "price": 7,
-    "discount": "5+1"
+    "discount": 0
   },
   {
     "id": 5,
