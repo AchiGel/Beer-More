@@ -19,7 +19,7 @@
     "alcohol": 4.5,
     "filtered": true,
     "price": 4.2,
-    "discount": 0
+    "discount": "4 + 1"
   },
   {
     "id": 3,
